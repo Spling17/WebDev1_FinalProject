@@ -324,7 +324,7 @@ main .top a {
 }
 .commitment .commitment_1 {
   margin-bottom: 30px;
-  width: 90%;
+  width: 100%;
 }
 .commitment .commitment_1 h2 {
   margin: 25px 0;
@@ -343,7 +343,7 @@ main .top a {
 }
 @media screen and (max-width: 650px) {
   .commitment .commitment_2 img {
-    width: 40%;
+    width: 30%;
     margin: 5px 0;
   }
 }
@@ -375,6 +375,12 @@ main .top a {
     width: 70%;
   }
 }
+@media screen and (max-width: 650px) {
+  .commitment .commitment_2 .icon {
+    width: 100%;
+    height: 50vh;
+  }
+}
 @media screen and (max-width: 800px) {
   .commitment .commitment_2 {
     margin-bottom: 5%;
@@ -382,16 +388,14 @@ main .top a {
 }
 @media screen and (max-width: 650px) {
   .commitment .commitment_2 {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 85vh;
+    flex-direction: column;
+    height: 140vh;
     width: 100vw;
   }
 }
 @media screen and (max-width: 650px) {
   .commitment {
-    height: 140vh;
+    height: 200vh;
     width: 100vw;
   }
 }
@@ -452,7 +456,7 @@ main .top a {
 @media screen and (max-width: 800px) {
   .container {
     top: 15%;
-    height: 85%;
+    height: 70%;
     width: 55%;
   }
 }
@@ -550,12 +554,18 @@ footer .logo {
 }
 @media screen and (max-width: 650px) {
   footer .logo {
+    margin: 10% 0 3% 15%;
     width: 80%;
     height: auto;
   }
 }
 footer .SNS {
   margin: 0 12%;
+}
+@media screen and (max-width: 650px) {
+  footer .SNS {
+    margin-left: 15%;
+  }
 }
 footer img {
   padding-right: 3%;

@@ -57,18 +57,23 @@ footer {
       height: auto;
     };
     @include sp {
+      margin: 10% 0 3% 15% ;
       width: 80%;
       height: auto;
     };
   }
   .SNS {
     margin: 0 12%;
+    @include sp {
+      margin-left: 15%;
+    };
   }
   img {
     padding-right: 3%;
     @include sp {
       width: 20%;
     };
+    
   }
   @include tab {
     display: flex;
