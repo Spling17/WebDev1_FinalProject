@@ -1,4 +1,4 @@
-@use "common";
+@import "mixin";
 /* ---------- header ---------- */
 main {
   height: 110vh;
@@ -11,17 +11,48 @@ main {
       width: 20%;
       height: auto;
       margin: 20px 0 0 3%;
+      @include tab {
+        width: 30%;
+      };
+      @include sp {
+        width: 40%;
+        height: auto;
+      };
     }
   }
   .top {
     h1 {
       margin: 4% 0 0 10%;
+      @include pc2 {
+        margin: 35% 0 0 5%;
+      };
+      @include tab {
+        margin: 30% 0 0 5%;
+      };
+      @include sp {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        margin: 45% 0 0 5%;
+      };
     }
     p {
       margin: 10px 0 10px 10%;
+      @include sp {
+        margin: 10px 0 10px 5%;
+        font-size: 1.5rem;
+      };
     }
     a {
       margin-left: 10%;
+      @include sp {
+        margin-left: 5%;
+      };
     }
   }
+  @include tab {
+    height: 110vh;
+  };
+  @include sp {
+    height: 90vh;
+  };
 }

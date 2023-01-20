@@ -7,12 +7,43 @@
   align-items: center;
   padding: 0 5% 10% 5%;
   div {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 35%;
+    margin-top: 5%;
     img {
-      width: 80%;
+      width: 90%;
       height: auto;
       border-radius: 3%;
     }
+    button {
+      width: 25vw;
+      height: 8vw;
+      line-height: 2rem;
+      font-size:1.8rem;
+      text-align: center;
+      padding: 10px 10px;
+
+      @include tab {
+        padding: 10px 0;
+        width: 250px;
+        height: 35%;
+        font-size: 1.6rem;
+      };
+    }
+    @include tab {
+      width: 45%;
+      height: 45%;
+    };
   }
-  
+  @include tab {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+  };
+  @include sp {
+    flex-direction: column;
+  };
 }

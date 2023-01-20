@@ -1,40 +1,88 @@
+@import "mixin";
 /* ---------- footer ---------- */
 footer {
   background-color: $color-grey;
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   display: flex;
   padding-top: 15px;
   background-color: $color-background;
   div {
     width: 30vw;
     height: 35vh;
+
+    @include tab {
+      width: 50%;
+      height: 20vh;
+    };
+    @include sp {
+      width: 50%;
+      height: 20vh;
+    };
   }
   h3 {
     font-size: 2.5rem;
     margin-top: 10px;
     color: $color-main;
     margin-bottom: 10px;
+    @include sp {
+      font-size: 2rem;
+      margin: 0;
+      margin: 2px 0;
+    };
   }
   h4 {
     margin-left: 35px;
     color: $color-main;
     margin-bottom: 10px;
   }
-  ul {
+  a {
     line-height: 4rem;
+    @include pc2 {
+      font-size: 1.4rem;
+    };
+    @include tab {
+      line-height: 2rem;
+    };
+    @include sp {
+      line-height: 2rem;
+    };
   }
   .logo {
-    width: 300px;
+    width: 80%;
     height: auto;
     margin: 3% 0 3% 10% ;
+    @include tab {
+      width: 100px;
+      height: auto;
+    };
+    @include sp {
+      width: 80%;
+      height: auto;
+    };
   }
   .SNS {
-    margin: 0 12%
+    margin: 0 12%;
   }
   img {
     padding-right: 3%;
+    @include sp {
+      width: 20%;
+    };
   }
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60vh;
+  };
+
+  @include sp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60vh;
+  };
 }
 .copyright {
   margin: 20px 5%;

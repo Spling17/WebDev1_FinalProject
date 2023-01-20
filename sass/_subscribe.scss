@@ -2,7 +2,7 @@
 .subscribe {
   background-color: rgb(134, 129, 126);
   text-align: left;
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   background-image: url(/img/img/irene-kredenets-E95Lpkg-bgc-unsplash.jpg);
   background-repeat: no-repeat;
@@ -20,11 +20,31 @@
   h2 {
     text-align: left;
     margin-left: 7%;
+    @include tab {
+      font-size: 3.5rem;
+    };
+    @include sp {
+      font-size: 3rem;
+    };
   }
   p {
     padding: 10px 10% 10px 7%;
   }
   a {
     margin-left: 7%;
+    @include sp {
+      // margin-left: 6%;
+    };
   }
+  @include tab {
+    top: 15%;
+    height: 85%;
+    width: 55%;
+  };
+  @include sp {
+    text-align: left;
+    height: 70%;
+    width: 80%;
+    left: 10%;
+  };
 }

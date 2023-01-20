@@ -1,3 +1,4 @@
+@import "mixin";
 
 /* ---------- benefit ---------- */
 .benefit {
@@ -5,18 +6,57 @@
   flex-direction: row;
   text-align: center;
   align-items: center;
-  padding: 0 5% 5% 5%;
+  padding: 0 7% 5% 7%;
   div {
     width: 30%;
-    height: 25%;
-    margin: 0 20px;
+    height: 30%;
+    margin: 0 15px;
+    display: inline-block;
+
+    @include tab {
+      width: 40%;
+    };
+    @include sp {
+      width: 100%;
+      height: 100%;
+    };
+    h3 {
+      padding-bottom: 20px;
+    }
+    p {
+      margin: 0 10%;
+      @include tab {
+        margin: 0;
+      };
+      @include sp {
+        margin: 0 5%;
+      };
+    }
+    img {
+      width: 70%;
+      height: 70%;
+      margin-top: 5%;
+
+      @include tab {
+        width: 90%;
+        height: 90%;
+        margin-top: 5%;
+      };
+      @include sp {
+        width: 80%;
+        height: 80%;
+        margin-top: 5%;
+      };
+    }
   }
-  h3 {
-    padding-bottom: 20px;
-  }
-  img {
-    width: 70%;
-    height: auto;
-    margin-top: 5%;
-  }
+  @include tab {
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3% 10% 3%;
+  };
+  @include sp {
+    flex-direction: column;
+    padding: 0 3% 10% 3%;
+  };
 }

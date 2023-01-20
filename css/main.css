@@ -47,8 +47,8 @@ html ul {
 html button {
   background-color: #2D7A86;
   color: #FCFCF7;
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 2.2rem;
+  font-weight: 500;
   font-family: "Nunito", serif;
   padding: 10px 60px;
   border: none;
@@ -56,74 +56,17 @@ html button {
   margin: 10px 0 30px 0;
 }
 
-/* ---------- common ---------- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+/*
+@include pc2 {
 
-html {
-  font-size: 65%;
-  background-color: #FCFCF7;
-}
+};
+@include tab {
 
-html body {
-  font-size: 1.6rem;
-  font-family: "Nunito", serif;
-  color: #5e6973;
-}
+};
+@include sp {
 
-html h1, html h2, html h3, html h4 {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 100;
-  color: #25313C;
-  padding-top: 30px;
-}
-
-html h1 {
-  font-size: 5.5rem;
-  line-height: 7rem;
-}
-
-html h2 {
-  font-size: 4rem;
-  text-align: center;
-}
-
-html h3 {
-  font-size: 3rem;
-}
-
-html h4 {
-  font-size: 2.3rem;
-}
-
-html a {
-  color: #5e6973;
-  text-decoration: none;
-}
-
-html p {
-  color: #5e6973;
-  line-height: 2.3rem;
-}
-
-html ul {
-  list-style: none;
-}
-
-html button {
-  background-color: #2D7A86;
-  color: #FCFCF7;
-  font-size: 2rem;
-  font-weight: 300;
-  font-family: "Nunito", serif;
-  padding: 10px 60px;
-  border: none;
-  border-radius: 0.5rem;
-  margin: 10px 0 30px 0;
-}
-
+};
+*/
 /* ---------- header ---------- */
 main {
   height: 110vh;
@@ -137,36 +80,148 @@ main header .logo {
   height: auto;
   margin: 20px 0 0 3%;
 }
+@media screen and (max-width: 800px) {
+  main header .logo {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 650px) {
+  main header .logo {
+    width: 40%;
+    height: auto;
+  }
+}
 main .top h1 {
   margin: 4% 0 0 10%;
+}
+@media screen and (max-width: 960px) {
+  main .top h1 {
+    margin: 35% 0 0 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .top h1 {
+    margin: 30% 0 0 5%;
+  }
+}
+@media screen and (max-width: 650px) {
+  main .top h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    margin: 45% 0 0 5%;
+  }
 }
 main .top p {
   margin: 10px 0 10px 10%;
 }
+@media screen and (max-width: 650px) {
+  main .top p {
+    margin: 10px 0 10px 5%;
+    font-size: 1.5rem;
+  }
+}
 main .top a {
   margin-left: 10%;
 }
+@media screen and (max-width: 650px) {
+  main .top a {
+    margin-left: 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main {
+    height: 110vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  main {
+    height: 90vh;
+  }
+}
 
+/*
+@include pc2 {
+
+};
+@include tab {
+
+};
+@include sp {
+
+};
+*/
 /* ---------- benefit ---------- */
 .benefit {
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  padding: 0 5% 5% 5%;
+  padding: 0 7% 5% 7%;
 }
 .benefit div {
   width: 30%;
-  height: 25%;
-  margin: 0 20px;
+  height: 30%;
+  margin: 0 15px;
+  display: inline-block;
 }
-.benefit h3 {
+@media screen and (max-width: 800px) {
+  .benefit div {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .benefit div {
+    width: 100%;
+    height: 100%;
+  }
+}
+.benefit div h3 {
   padding-bottom: 20px;
 }
-.benefit img {
+.benefit div p {
+  margin: 0 10%;
+}
+@media screen and (max-width: 800px) {
+  .benefit div p {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .benefit div p {
+    margin: 0 5%;
+  }
+}
+.benefit div img {
   width: 70%;
-  height: auto;
+  height: 70%;
   margin-top: 5%;
+}
+@media screen and (max-width: 800px) {
+  .benefit div img {
+    width: 90%;
+    height: 90%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .benefit div img {
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .benefit {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3% 10% 3%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .benefit {
+    flex-direction: column;
+    padding: 0 3% 10% 3%;
+  }
 }
 
 /* ---------- product ---------- */
@@ -178,28 +233,90 @@ main .top a {
   padding: 0 5% 10% 5%;
 }
 .product div {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  height: 35%;
+  margin-top: 5%;
 }
 .product div img {
-  width: 80%;
+  width: 90%;
   height: auto;
   border-radius: 3%;
 }
+.product div button {
+  width: 25vw;
+  height: 8vw;
+  line-height: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 10px 10px;
+}
+@media screen and (max-width: 800px) {
+  .product div button {
+    padding: 10px 0;
+    width: 250px;
+    height: 35%;
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .product div {
+    width: 45%;
+    height: 45%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .product {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 650px) {
+  .product {
+    flex-direction: column;
+  }
+}
 
+/*
+@include pc2 {
+
+};
+@include tab {
+
+};
+@include sp {
+
+};
+*/
 /* ---------- commitment ---------- */
 .commitment {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  height: 110vh;
+  height: 120vh;
   width: 100vw;
   background-image: url(/img/BK/bk1.png);
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 9%;
 }
+@media screen and (max-width: 650px) {
+  .commitment {
+    background-color: #2D7A86;
+  }
+}
 .commitment p {
   margin-top: 10px;
   color: #FCFCF7;
+}
+@media screen and (max-width: 800px) {
+  .commitment p {
+    margin-bottom: 0;
+  }
 }
 .commitment h1, .commitment h2 {
   color: #FCCE00;
@@ -207,13 +324,14 @@ main .top a {
 }
 .commitment .commitment_1 {
   margin-bottom: 30px;
+  width: 90%;
 }
 .commitment .commitment_1 h2 {
-  margin: 20px 0;
+  margin: 25px 0;
 }
 .commitment .commitment_2 {
   margin: 0 auto;
-  width: 120vh;
+  width: 60vw;
   display: flex;
   align-items: center;
 }
@@ -221,21 +339,80 @@ main .top a {
   background-color: rgba(250, 250, 250, 0.26);
   border-radius: 50%;
   width: 50%;
-  margin: 10px 0;
+  margin: 15px 0;
+}
+@media screen and (max-width: 650px) {
+  .commitment .commitment_2 img {
+    width: 40%;
+    margin: 5px 0;
+  }
+}
+.commitment .commitment_2 .icon {
+  width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .commitment .commitment_2 .icon h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .commitment .commitment_2 .icon h1 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .commitment .commitment_2 .icon h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .commitment .commitment_2 .icon h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .commitment .commitment_2 .icon {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .commitment .commitment_2 {
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .commitment .commitment_2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 85vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 650px) {
+  .commitment {
+    height: 140vh;
+    width: 100vw;
+  }
 }
 .commitment button {
   margin-top: 3%;
   background-color: #FCFCF7;
   color: #2D7A86;
   font-weight: bold;
-  padding: 10px 24%;
+  padding: 10px 28%;
+}
+@media screen and (max-width: 650px) {
+  .commitment button {
+    margin-top: 5%;
+  }
 }
 
 /* ---------- subscribe ---------- */
 .subscribe {
   background-color: rgb(134, 129, 126);
   text-align: left;
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   background-image: url(/img/img/irene-kredenets-E95Lpkg-bgc-unsplash.jpg);
   background-repeat: no-repeat;
@@ -256,18 +433,54 @@ main .top a {
   text-align: left;
   margin-left: 7%;
 }
+@media screen and (max-width: 800px) {
+  .container h2 {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container h2 {
+    font-size: 3rem;
+  }
+}
 .container p {
   padding: 10px 10% 10px 7%;
 }
 .container a {
   margin-left: 7%;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    top: 15%;
+    height: 85%;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    text-align: left;
+    height: 70%;
+    width: 80%;
+    left: 10%;
+  }
+}
 
+/*
+@include pc2 {
+
+};
+@include tab {
+
+};
+@include sp {
+
+};
+*/
 /* ---------- footer ---------- */
 footer {
   background-color: #FCFCF7;
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   display: flex;
   padding-top: 15px;
   background-color: #EEE7D7;
@@ -276,30 +489,97 @@ footer div {
   width: 30vw;
   height: 35vh;
 }
+@media screen and (max-width: 800px) {
+  footer div {
+    width: 50%;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer div {
+    width: 50%;
+    height: 20vh;
+  }
+}
 footer h3 {
   font-size: 2.5rem;
   margin-top: 10px;
   color: #2D7A86;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 650px) {
+  footer h3 {
+    font-size: 2rem;
+    margin: 0;
+    margin: 2px 0;
+  }
+}
 footer h4 {
   margin-left: 35px;
   color: #2D7A86;
   margin-bottom: 10px;
 }
-footer ul {
+footer a {
   line-height: 4rem;
 }
+@media screen and (max-width: 960px) {
+  footer a {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer a {
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer a {
+    line-height: 2rem;
+  }
+}
 footer .logo {
-  width: 300px;
+  width: 80%;
   height: auto;
   margin: 3% 0 3% 10%;
+}
+@media screen and (max-width: 800px) {
+  footer .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer .logo {
+    width: 80%;
+    height: auto;
+  }
 }
 footer .SNS {
   margin: 0 12%;
 }
 footer img {
   padding-right: 3%;
+}
+@media screen and (max-width: 650px) {
+  footer img {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 800px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 60vh;
+  }
 }
 
 .copyright {
