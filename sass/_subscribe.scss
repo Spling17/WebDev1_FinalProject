@@ -1,10 +1,30 @@
 /* ---------- subscribe ---------- */
 .subscribe {
   background-color: rgb(134, 129, 126);
-  text-align: center;
-  height: 50vh;
+  text-align: left;
+  height: 60vh;
   width: 100vw;
-  background-image: url(/img/img/coconuts.jpg);
+  background-image: url(/img/img/irene-kredenets-E95Lpkg-bgc-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  height: 60%;
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.694);
+  border-radius: 1em;
+  h2 {
+    text-align: left;
+    margin-left: 7%;
+  }
+  p {
+    padding: 10px 10% 10px 7%;
+  }
+  a {
+    margin-left: 7%;
+  }
 }

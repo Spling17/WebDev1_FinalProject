@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 5%;
-  background-color: $color-grey;
-  section {
+  align-items: center;
+  padding: 0 5% 5% 5%;
+  div {
     width: 30%;
-    height: 20%;
-    margin: 0 25px;
+    height: 25%;
+    margin: 0 20px;
   }
   h3 {
     padding-bottom: 20px;

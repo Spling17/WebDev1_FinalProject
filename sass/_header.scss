@@ -1,11 +1,11 @@
 @use "common";
 /* ---------- header ---------- */
 main {
-  height: 80vh;
+  height: 110vh;
   width: 100vw;
-  background-image: url(/img/img/Desktop_Slide1_3000x.png);
+  background-image: url(/img/BK/top2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:100%;
   header {
     .logo {
       width: 20%;

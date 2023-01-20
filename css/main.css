@@ -6,7 +6,7 @@
 
 html {
   font-size: 65%;
-  background-color: #EEE7D7;
+  background-color: #FCFCF7;
 }
 html body {
   font-size: 1.6rem;
@@ -24,10 +24,11 @@ html h1 {
   line-height: 7rem;
 }
 html h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  text-align: center;
 }
 html h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 html h4 {
   font-size: 2.3rem;
@@ -38,7 +39,7 @@ html a {
 }
 html p {
   color: #5e6973;
-  line-height: 2.2rem;
+  line-height: 2.3rem;
 }
 html ul {
   list-style: none;
@@ -47,6 +48,7 @@ html button {
   background-color: #2D7A86;
   color: #FCFCF7;
   font-size: 2rem;
+  font-weight: 300;
   font-family: "Nunito", serif;
   padding: 10px 60px;
   border: none;
@@ -62,7 +64,7 @@ html button {
 
 html {
   font-size: 65%;
-  background-color: #EEE7D7;
+  background-color: #FCFCF7;
 }
 
 html body {
@@ -84,11 +86,12 @@ html h1 {
 }
 
 html h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
 html h3 {
-  font-size: 2.8rem;
+  font-size: 3rem;
 }
 
 html h4 {
@@ -102,7 +105,7 @@ html a {
 
 html p {
   color: #5e6973;
-  line-height: 2.2rem;
+  line-height: 2.3rem;
 }
 
 html ul {
@@ -113,6 +116,7 @@ html button {
   background-color: #2D7A86;
   color: #FCFCF7;
   font-size: 2rem;
+  font-weight: 300;
   font-family: "Nunito", serif;
   padding: 10px 60px;
   border: none;
@@ -122,11 +126,11 @@ html button {
 
 /* ---------- header ---------- */
 main {
-  height: 80vh;
+  height: 110vh;
   width: 100vw;
-  background-image: url(/img/img/Desktop_Slide1_3000x.png);
+  background-image: url(/img/BK/top2.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 main header .logo {
   width: 20%;
@@ -148,13 +152,13 @@ main .top a {
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 5%;
-  background-color: #FCFCF7;
+  align-items: center;
+  padding: 0 5% 5% 5%;
 }
-.benefit section {
+.benefit div {
   width: 30%;
-  height: 20%;
-  margin: 0 25px;
+  height: 25%;
+  margin: 0 20px;
 }
 .benefit h3 {
   padding-bottom: 20px;
@@ -170,82 +174,131 @@ main .top a {
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 5%;
+  align-items: center;
+  padding: 0 5% 10% 5%;
 }
-.product img {
-  width: 90%;
-  height: 90%;
+.product div {
+  display: block;
+}
+.product div img {
+  width: 80%;
+  height: auto;
   border-radius: 3%;
 }
 
 /* ---------- commitment ---------- */
 .commitment {
-  background-color: #2D7A86;
   display: block;
   text-align: center;
+  height: 110vh;
+  width: 100vw;
+  background-image: url(/img/BK/bk1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 9%;
 }
-.commitment .explain {
+.commitment p {
+  margin-top: 10px;
+  color: #FCFCF7;
+}
+.commitment h1, .commitment h2 {
+  color: #FCCE00;
+  padding: 0;
+}
+.commitment .commitment_1 {
+  margin-bottom: 30px;
+}
+.commitment .commitment_1 h2 {
+  margin: 20px 0;
+}
+.commitment .commitment_2 {
   margin: 0 auto;
   width: 120vh;
   display: flex;
   align-items: center;
 }
-.commitment .explain img {
-  width: 40%;
+.commitment .commitment_2 img {
+  background-color: rgba(250, 250, 250, 0.26);
+  border-radius: 50%;
+  width: 50%;
+  margin: 10px 0;
 }
-.commitment p {
-  color: #FCFCF7;
-}
-.commitment h1, .commitment h2 {
-  color: #FCCE00;
-}
-.commitment bottom {
+.commitment button {
+  margin-top: 3%;
   background-color: #FCFCF7;
+  color: #2D7A86;
+  font-weight: bold;
+  padding: 10px 24%;
 }
 
 /* ---------- subscribe ---------- */
 .subscribe {
   background-color: rgb(134, 129, 126);
-  text-align: center;
-  height: 50vh;
+  text-align: left;
+  height: 60vh;
   width: 100vw;
-  background-image: url(/img/img/coconuts.jpg);
+  background-image: url(/img/img/irene-kredenets-E95Lpkg-bgc-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  height: 60%;
+  width: 55%;
+  background-color: rgba(255, 255, 255, 0.694);
+  border-radius: 1em;
+}
+.container h2 {
+  text-align: left;
+  margin-left: 7%;
+}
+.container p {
+  padding: 10px 10% 10px 7%;
+}
+.container a {
+  margin-left: 7%;
 }
 
 /* ---------- footer ---------- */
 footer {
   background-color: #FCFCF7;
   width: 100%;
+  height: 40vh;
   display: flex;
-  padding-top: 20px;
+  padding-top: 15px;
+  background-color: #EEE7D7;
 }
-footer section {
+footer div {
   width: 30vw;
   height: 35vh;
 }
-footer section h3 {
+footer h3 {
   font-size: 2.5rem;
-  margin-top: 20px;
+  margin-top: 10px;
   color: #2D7A86;
+  margin-bottom: 10px;
 }
-footer section h4 {
+footer h4 {
   margin-left: 35px;
   color: #2D7A86;
+  margin-bottom: 10px;
 }
-footer section ul {
+footer ul {
   line-height: 4rem;
 }
-footer section .logo {
+footer .logo {
   width: 300px;
   height: auto;
-  margin: 5% 0 3% 10%;
+  margin: 3% 0 3% 10%;
 }
-footer section .SNS {
+footer .SNS {
   margin: 0 12%;
 }
-footer section img {
+footer img {
   padding-right: 3%;
 }
 
