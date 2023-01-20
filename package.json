@@ -1,0 +1,23 @@
+{
+  "name": "webdev1_final-project",
+  "version": "0.0.1",
+  "description": "this is Web Dev1 final project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass sass/main.scss css/main.css -w", 
+    "dev":"serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spling17/WebDev1_FinalProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Spling17/WebDev1_FinalProject/issues"
+  },
+  "homepage": "https://github.com/Spling17/WebDev1_FinalProject#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}

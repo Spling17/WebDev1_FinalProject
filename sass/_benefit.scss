@@ -1,0 +1,22 @@
+
+/* ---------- benefit ---------- */
+.benefit {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 5%;
+  background-color: $color-grey;
+  section {
+    width: 30%;
+    height: 20%;
+    margin: 0 25px;
+  }
+  h3 {
+    padding-bottom: 20px;
+  }
+  img {
+    width: 70%;
+    height: auto;
+    margin-top: 5%;
+  }
+}

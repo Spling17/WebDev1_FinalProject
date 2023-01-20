@@ -1,0 +1,27 @@
+@use "common";
+/* ---------- header ---------- */
+main {
+  height: 80vh;
+  width: 100vw;
+  background-image: url(/img/img/Desktop_Slide1_3000x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  header {
+    .logo {
+      width: 20%;
+      height: auto;
+      margin: 20px 0 0 3%;
+    }
+  }
+  .top {
+    h1 {
+      margin: 4% 0 0 10%;
+    }
+    p {
+      margin: 10px 0 10px 10%;
+    }
+    a {
+      margin-left: 10%;
+    }
+  }
+}
